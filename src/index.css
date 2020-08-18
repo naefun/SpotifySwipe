@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1f1f1f;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigationBar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #f3f3f3;
+    padding: 0 10%;
+  }
+  .navigationBar a {
+    color: #f3f3f3;
+  }
+  .hamburgerContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .hamburgerBtn {
+    font-size: 3em;
+    background: none;
+    border: none;
+    color: #f3f3f3;
+    padding: 0;
+  }
+  .navItems {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+  }
+  .navItems a {
+    text-decoration: none;
+  }
+  .albumCoverContainer {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+      135deg,
+      rgba(72, 241, 120, 0.42) 0%,
+      rgba(255, 86, 177, 0.42) 100%
+    );
+    height: 100vw;
+  }
+  .albumCoverContainer:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(./imgs/album1.jpg);
+    opacity: 0.13;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .albumCoverContainer img {
+    max-width: 80%;
+    display: block;
+    z-index: 2;
+  }
+
+  .btnGroup {
+    margin: 2em 0;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    column-gap: 1em;
+  }
+  .btnGroup button {
+    background: none;
+    font-size: 1.2em;
+    padding: 0;
+    flex: 1 1 0px;
+    padding: 0.7em 0;
+    color: #f3f3f3;
+    letter-spacing: 0.1em;
+  }
+  .noBtn {
+    border: 1px solid #fc7a7a;
+  }
+  .yesBtn {
+    border: 1px solid #a8ffa0;
+  }
+  .historyList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+  }
+  .historyList li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    color: #f3f3f3;
+  }
+  .historyIcon {
+    color: #fc7a7a;
+  }
+  .historyIconlike {
+    color: #a8ffa0;
+  }
+  .containerPadding {
+    padding: 0 10%;
+  }
+  .btnContainer {
+    margin: 1em 0;
+  }
+  .historyBtn {
+    color: #f3f3f3;
+    padding: 0.7em 2.7em;
+    background: none;
+    border: 1px solid #f3f3f3;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+  .fullHeightNavClass {
+    height: 100vh;
+  }
+  .noScroll {
+    overflow: hidden;
+  }
+}
