@@ -102,9 +102,11 @@ ul {
   }
   .noBtn {
     border: 1px solid #fc7a7a;
+    box-shadow: inset 0 0 6px #fc7a7a80, 0 0 6px #fc7a7a80;
   }
   .yesBtn {
     border: 1px solid #a8ffa0;
+    box-shadow: inset 0 0 6px #a8ffa080, 0 0 6px #a8ffa080;
   }
   .historyList {
     display: flex;
